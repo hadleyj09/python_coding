@@ -1,0 +1,52 @@
+List practice with python 3
+
+# Handling lists in python3
+
+#List name:
+friends = ["Kevin", "Kate", "Jim", "Jim", "John", "Oscar", "Feebie"]
+
+#printing list:
+print(friends)
+
+#make a copy of the list and print:
+friends2 = friends.copy()
+print(friends2)
+
+#find the index of "Kevin"
+print(friends.index("Kevin"))
+
+#What position is "Kate" in?
+print(friends[1])
+
+#What are the ways you can add the element "Corey" to the list?
+friends.append("Corey")
+print(friends)
+
+#Change the element "Kate" to "Jason" in the current list
+friends[1] = "Jason"
+print(friends)
+
+#Add the element "Samantha" to index position 2 of the current list
+friends.insert(2, "Samantha")
+print(friends)
+
+#®emove the element "Oscar" from the current list
+friends.remove("Oscar")
+print(friends)
+
+#"Pop off" the last element of the list
+friends.pop()
+print(friends)
+
+#Write the code to find out what the last element is of the list
+print(friends[-1])
+
+#Write the code to find out what the last 4 elements are of the list
+print(friends[-4:])
+
+#Write the code to find out what the first 2 elements are of the list
+print(friends[:2])
+
+#Clear the list
+friends.clear()
+print(friends)
