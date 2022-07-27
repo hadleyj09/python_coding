@@ -1,0 +1,13 @@
+tempertature = 35
+
+if tempertature > 30:
+    print("It's a hot day!")
+    print("Drink lots of water")
+elif tempertature > 20:
+    print("The weather is ok today.")
+elif tempertature > 10:
+    print("It's pretty cool today.")
+else:
+    print("The weather is wild.")
+
+
