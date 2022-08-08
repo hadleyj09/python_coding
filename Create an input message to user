@@ -1,0 +1,13 @@
+#1. Create a greeting for your program.
+greeting = "Hello user!"
+name = input("What is your name? ")
+#2. Ask the user for the city that they grew up in.
+city_q = input("What city did you grow up in? ")
+#3. Ask the user for the name of a pet.
+pet_kind = input("What kind of pet do you have? ")
+pet_name_q = input("What is your pet's name? ")
+#4. Combine this information and send them back a message.
+
+print(greeting + " It's a pleasure to meet you, " + name + ". Welcome to the program, " + name + 
+". You have just entered the matrix. It looks like you are from the city of " + city_q + 
+", and that is very interesting. We know about your pet " + pet_kind +". It's name is, " + pet_name_q)
