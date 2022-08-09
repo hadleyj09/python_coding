@@ -1,0 +1,11 @@
+age = input("What is your current age? ")
+
+age_as_int = int(age)
+years_remaining = 90 - age_as_int
+days_remaining = years_remaining * 365
+weeks_remaining = years_remaining * 52
+months_remaining = years_remaining * 12
+
+print(f"Hello. It's a pleasure to meet you. It looks like you are {age} years old. 
+That means, if you were to live until 90, you have {years_remaining} years, {months_remaining} months, {weeks_remaining} weeks, 
+and {days_remaining} days left. ")
