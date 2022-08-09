@@ -1,0 +1,21 @@
+#In order for people to ride a rollercoaster at an amusement park, they must be at least 120cm tall, 
+and for those who are 12 and under, its's $5, 13-17 = $7 and 18 + = $12
+
+height = int(input("How tall are you in cm? "))
+age = int(input("What is your age? "))
+
+if height >= 120:
+  print("You are tall enough to ride.")
+  if age <= 12:
+    print("Your ticket is $5.")
+  elif age <= 17:
+    print("Your ticket is $7.")
+  elif age >= 18:
+    print("Your ticket is $12.")
+else:
+  print("We apologize, but you are not tall enough to ride yet.")
+
+
+
+
+
