@@ -1,0 +1,19 @@
+height = float(input("What is your height in meters? "))
+weight = int(input("How much do you weigh in kg? "))
+BMI = round(float(weight/height**2),2)
+
+print(f"Hello, and welcome to this clinic today. After our health check, 
+we see that your height is {height}cm, and that your weight is {weight}kg. 
+Based on the BMI index, yours is {BMI}.")
+
+if BMI <= 18.4:
+  print("Your BMI score shows that your are currently underweight.")
+elif BMI <= 25:
+  print("Your BMI score shows that your are currently a normal weight.")
+elif BMI <= 30:
+  print("Your BMI score shows that your are currently slightly overweight.")
+elif BMI <= 35:
+  print("Your BMI score shows that your are currently obese.")
+else:
+   print("Your BMI score shows that your are currently clinically obese.")
+
