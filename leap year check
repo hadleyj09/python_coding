@@ -1,0 +1,16 @@
+#Write a code to see if a year is a leap year or not.
+
+year= int(input("What year are you curious about? "))
+
+if year % 4 == 0:
+  print("Let's check.")
+  if year % 100 == 0:
+    print(f"{year} is not a leap year.")
+    if year % 400 == 0:
+      print(f"{year} is definitely a leap year.")
+    else:
+      print(f"{year} is not a leap year.")
+  else: 
+    print(f"{year} is a leap year!")
+else:
+  print(f"{year} is not a leap year.")
