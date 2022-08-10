@@ -1,0 +1,35 @@
+import random
+
+coin_toss = random.randint(0,1)
+
+guess = (input("It is a very cool evening here at Choopie Loops stadium tonight, and it looks like the two teams are coming out to see the referee for the coin toss. Team Wankle Berry chooses heads, and Team Flamble Wonkers has chosen tails. The ref has tossed the coin and....QUESTION: which team will start the game off with the ball? Please type Team Wankle Berry, or Team Flamble Wonkers. Enter your guess: "))
+
+print("Let's see! Press the 'Run' button to toss the coin!")
+print(coin_toss)
+
+if coin_toss == 0:
+  print("Heads! Team Wankle Berry will start the game!")
+  if guess == 'Team Wankle Berry':
+    print("Your team won! Let's go!!!")
+  elif guess == 'Team Flamble Wonkers':
+    print("Let's get ready!")
+
+
+if coin_toss == 1:
+  print("Tails! Team Flamble Wonkers will start the game!")
+  if guess == 'Team Flamble Wonkers':
+    print("Your team won! Let's go!!!!!!")
+  elif guess == 'Team Wankle Berry':
+    print("Not this time...")
+
+
+
+
+
+
+
+
+
+
+
+
