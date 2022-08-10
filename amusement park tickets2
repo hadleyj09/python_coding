@@ -1,0 +1,31 @@
+
+
+print("Hello and welcome to the SUPER SONIC WINDER. We are happy to have you here. Please enter your height and age to board this ride.")
+
+height = float(input("How tall are you in meters? "))
+age = int(input("How old are you? "))
+
+
+print(f"Your height is {height}m, and your age is {age}.")
+
+if height >= 1.5:
+  print("Welcome aboard!")
+  if age <= 12:
+    bill = 5
+    print("Your ticket is $5")
+  elif age <= 17:
+    bill = 7
+    print("Your ticket is $7")
+  else:
+    bill = 12
+    print("Your ticket is $12")
+  bill_with_picture = int(bill + 3)
+  pic_option = input("Would you like picture after your ride? Enter 'YES' or 'NO'. ")
+  
+  if pic_option == 'YES':
+    print(f"Your bill is ${bill_with_picture}")
+  else:
+    print(f"Your bill is ${bill}.")
+else:
+  print("We are very sorry, but you must be at least 1.5m tall to ride.")
+
