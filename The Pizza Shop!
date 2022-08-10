@@ -1,0 +1,70 @@
+total = 0
+
+
+print("Hello and welocome to Pizza Pizzeria! We are very happy to have you today, and thank you for dining with us. To being, please let us know which kind of pizza you'd like today. We have cheese, pepperoni, sausage, ham and pineapple, and vegetarian.")
+
+pizza_type = input("Please enter the kind of pizza you'd like: ")
+
+if pizza_type == 'cheese':
+  print("Cheese pizza! Great!.")
+elif pizza_type == 'pepperoni':
+  print("Pepperoni pizza! Great!.")
+elif pizza_type == 'sausage':
+  print("Sausage pizza! Great!.")
+elif pizza_type == 'ham and pineapple':
+  print("Ham and Pineapple pizza! Great!.")
+else: 
+  print("Vegetarian pizza! Great!.")
+
+print(f"Thank you! Now, what size would you like?")
+
+size = input("Please choose a size of S, M, or L: ")
+
+if size == 'S':
+  total += 5
+  print("That will be $5.")
+elif size == 'M':
+  total += 10
+  print("That will be $10.")
+else:
+  total += 15
+  print("That will be $15.")
+
+
+print(f"Thank you very much. You have chosen a {size} {pizza_type} pizza. Great choice! Would you like any extra toppings such as extra cheese, sausage, pepperoni, or pineapple? Each extra topping for a small pizza is $1. All other sizes will have $2 added.")
+
+add_pepperoni = input("Do you want pepperoni? Y or N ")
+extra_cheese = input("Do you want extra cheese? Y or N ")
+extra_sausage = input("Do you want extra sausage? Y or N ")
+extra_pineapple = input("Do you want extra pineapple? Y or N ")
+
+if add_pepperoni == 'Y':
+  if size == 'S':
+    total += 1
+    print("That will be $1 extra .")
+else: 
+    total += 2
+  
+if extra_cheese == 'Y': 
+    if size == 'S':
+      total += 1
+      print("That will be $1 extra .")
+else: 
+    total += 2
+  
+if extra_sausage == 'Y': 
+    if size == 'S':
+      total += 1
+      print("That will be $1 extra .")
+else: 
+    total += 2
+  
+if extra_pineapple == 'Y': 
+    if size == 'S':
+      total += 1
+      print("That will be $1 extra .")
+else: 
+    total += 2
+
+print(f"Thank you! We will get that pizza ready for you, on the double! Your total today is ${total}.")
+
