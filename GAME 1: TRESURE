@@ -1,0 +1,59 @@
+print('''
+*******************************************************************************
+          |                   |                  |                     |
+ _________|________________.=""_;=.______________|_____________________|_______
+|                   |  ,-"_,=""     `"=.|                  |
+|___________________|__"=._o`"-._        `"=.______________|___________________
+          |                `"=._o`"=._      _`"=._                     |
+ _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
+|                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
+|___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
+          |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
+ _________|___________| ;`-.o`"=._; ." ` '`."\` . "-._ /_______________|_______
+|                   | |o;    `"-.o`"=._``  '` " ,__.--o;   |
+|___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
+____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
+/______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
+____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
+/______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
+____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
+/______/______/______/______/______/______/______/______/______/______/_____ /
+*******************************************************************************
+''')
+
+
+print("Time to get the treasure! Let's go on a coding adventure! Choose an option to continue through the story. 
+Will you win? Or will you walk into chaos and crash and burn? This way....please..")
+
+ready = (input("Are you ready? Enter YES or NO: "))
+
+if ready == 'YES':
+  choice1 = input("You start off walking through a beautiful park. But then, a huge, purple, confusingly enraged elephant comes rushing right towards you! Do you run straight, turn right, or turn left? Enter your answer: ")
+  if choice1 == 'run straight':
+    print("Why in the world would you run straight? You die. GAME OVER")
+  elif choice1 == 'turn left':
+    print("Oops! Quick sand! You die. GAME OVER")
+  elif choice1 == 'turn right':
+    choice2 = input("Aren't you the smart one...for now at least. Let's keep moving. You walk to a bridge, and suddenly, the ground beneath you starts to crumble! What do you do now? Do you 'wait' or do you 'run' across the bridge? Enter your answer - wait, or run: " )
+    if choice2 == 'run':
+      choice3 = input("Wow. Look at you. Not dead yet, huh? Don't get too ahead of yourself just yet. You've still got one more challenge ahead. So, you made it across the bridge, and come to 3 doors. One door is red, another is blue, and the last one is pink. Which door leads you out of this craziness? Choose: red, blue, or pink: ")
+      if choice3 == 'pink':
+        print("You're better than I thought...Not bad at all! YOU WIN!")
+      elif choice3 == 'blue':
+        print("You got sucked in by extremely strong winds and died. GAME OVER")
+      elif choice3 == 'black':
+        print("You got shot into space and burned up in the atmosphere. GAME OVER")
+      else:
+        print("You're not even trying. GAME OVER")
+    else:
+      print("You really waited? Boooo! You die! GAME OVER!")
+  else:
+    print("What? You entered something that's not a choice. For that, you die! GAME OVER!")
+  
+else:
+  print("Game OVER.")
+  
+
+
+
+
