@@ -1,0 +1,25 @@
+import random
+
+fortune_score = random.randint(1,100)
+
+begin = (input("Hello and welcome to your future. You have come to me in order to find out the chances of how wealthy you will become. Now, as I look into my ball of code, I can see many possibilities. Would you like to begin? Choose 'YES' or 'NO': "))
+
+if begin == 'YES':
+  print("Very well then. Please hit the 'Run' button and see how much of a chance betweem 1 and 100 you have of being wealthy. Remember, this is a highly scientific process...and not a scam...")
+else:
+  print("GO AWAY!")
+
+print(f"Your chance of wealth is {fortune_score} out of 100! This means: ")
+
+if fortune_score <= 25:
+  print("Sorry...you're broke.")
+elif fortune_score > 26 and fortune_score < 50:
+  print("Average. Save wisely.")
+elif fortune_score > 50 and fortune_score <= 75:
+  print("Not bad.")
+elif fortune_score > 75:
+  print("You've gotta good life ahead!")
+else:
+  print("You can do better.")
+
+print("Now that will be $100. Will you be using cash, or card?")
