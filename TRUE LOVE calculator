@@ -1,0 +1,41 @@
+
+
+#Lets create a TRUE LOVE Calculator to give a very accurate prediction on if you and your "crush" are meant to be. First, we have add up the number of times the letters T-R-U-E and L-O-V-E come up in both of your names. Next, you'll get a score! Are you ready?
+
+name1 = input("Please enter your name here: ")
+name2 = input("Please enter their name here: ")
+
+both_names = name1 + name2
+both_lower = both_names.lower()
+
+print(f"Hello {name1} and {name2}! Let's see if you are a good match for one another.")
+
+
+print(f"Your names together looks like this: {both_lower}. Time to calculate!")
+
+t = both_lower.count('t')
+r = both_lower.count('r')
+u = both_lower.count('u')
+e = both_lower.count('e')
+
+true = t + r + u + e
+
+l = both_lower.count('l')
+o = both_lower.count('o')
+v = both_lower.count('v')
+e = both_lower.count('e')
+
+love = l + o + v + e 
+
+true_love = str(true) + str(love)
+
+print(f"Congradulations! Your TRUE LOVE score is {true_love}! But what does this mean?")
+
+if int(true_love) < 10 or int(true_love) > 90:
+  print("You both go together like bananas and chunky soup.")
+elif int(true_love) > 40 and int(true_love) < 60:
+  print("Ehhhhh....Maybe you won't destroy each other...Good luck!")
+else:
+  print("Welp......Let's see where this goes")
+
+print("Did you have fun?")
