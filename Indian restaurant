@@ -1,0 +1,17 @@
+menu = (input("Hello and welcome to SAMOSA ROSA! We are the best Indian restaurant chain in the world, with amazing samosa. For our menu today, we have our Curry Delux meal, The Buffet, and The SAMOSA ROSA Special. They all come with a drink. Please enter the meal you'd like today - 'curry delux', 'the buffet', 'the samosa rosa special': "))
+
+bill = 0
+
+if menu == 'curry delux':
+  bill += 10
+  print("Your bill is $10.")
+elif menu == 'the buffet':
+  bill += 20
+  print("Your bill is $20.")
+elif menu == 'the samosa rosa special':
+  bill += 25
+  print("Your bill is $25.")
+
+total = bill
+
+print(f"You ordered {menu}. Your total today is ${total}. Thank you very much for dining with us today.")
