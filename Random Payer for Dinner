@@ -1,0 +1,37 @@
+import random
+
+names = input("Thank you all for joining tonight. This was a great dinner. Now, we need to see who will pay for it. 
+Let's do a random selection of everyone here. If your name pops up, you pay. 
+Enter the names of everyone in attendance separated by a comma: ")
+name_list = names.split(", ")
+num_names = (len(name_list))
+
+random_choice = random.randint(0, num_names - 1)
+print(name_list[random_choice])
+
+
+------------
+
+attendees = input("Thank you all for coming to our SAMOSA Extraveganza! 
+We hope you enjoyed the various samosa dishes we prepared, and we are looking forward to having you again! 
+As customary to our tradition, the table will randomly choose 1 person to pay. 
+Please eneter the names of everone in attendance, separted by a comma: ")
+
+names = attendees.split(", ")
+
+print(f"We have {attendees} with us this evening. And the payer of tonights meal will be: ")
+
+num_of_people = (len(names))
+random_choice = random.randint(0, num_of_people - 1)
+
+print(names[random_choice])
+
+----------
+
+food_options = input("Johnny and Jackie wanted to order in on this very rainy and stormy evening, but they didn't know what to eat. Let's help them out by randomly choosing one of their top favorite cusines. Enter their favorite cuisines: ")
+
+foods = food_options.split(", ")
+num_of_items = len(foods)
+random_choice = random.randint(0, num_of_items -1)
+dinner = foods[random_choice]
+print(f"Tonight's dinner will be {dinner}!")
