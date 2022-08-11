@@ -32,3 +32,23 @@ print(num_of_students)
 
 average_height = round(total_height/num_of_students)
 print(average_height)
+
+---------------------
+
+student_scores = input("Hello everyone. Now that the exams have all been graded, 
+we'd like to announce the highest score in the class. 
+Please wait as all as scores are now being entered: ").split(", ")
+
+highest_score = 0
+
+for score in student_scores:
+  if int(score) > highest_score:
+    highest_score = int(score)
+print(f"Thank you all for waiting. The highest score is {highest_score}!")  
+
+
+  
+
+
+
+
