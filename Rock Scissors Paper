@@ -1,0 +1,47 @@
+mport random
+
+ready = (input(
+    "Let's play rock, paper, scissors with the computer! Are you ready? Enter YES or NO:"
+))
+
+if ready == 'YES':
+    print("Let us begin.")
+    player_choice = int(
+        input("Enter 0 for rock, 1 for paper, 2 for scissors: "))
+    if player_choice == 0:
+        print("You have chosen ROCK")
+    elif player_choice == 1:
+        print("You have chosen PAPER")
+    elif player_choice == 2:
+        print("You have chosen SCISSORS")
+    print(f"Now, the CPU will play.")
+    CPU_choice = random.randint(0, 2)
+    if CPU_choice == 0:
+        print("The CPU chose ROCK")
+    elif CPU_choice == 1:
+        print("The CPU chose PAPER")
+    elif CPU_choice == 2:
+        print("The CPU chose SCISSORS")
+    if player_choice == 0:
+        if CPU_choice == 0:
+            print("DRAW")
+        elif CPU_choice == 1:
+            print("CPU wins. Paper beats rock")
+        elif CPU_choice == 2:
+            print("You win. Rock beats scissors")
+    elif player_choice == 1:  #paper
+        if CPU_choice == 0:  #rock
+            print("You win. Paper beats rock!")
+        elif CPU_choice == 1:  #paper
+            print("DRAW")
+        elif CPU_choice == 2:  #scissors
+            print("CPU wins. Scissors beats paper!")
+    elif player_choice == 2:  #scissors
+        if CPU_choice == 0:  #rock
+            print("CPU wins. Rock beats scissors!")
+        elif CPU_choice == 1:  #paper
+            print("You win. Scissors beats paper!")
+        elif CPU_choice == 2:  #scissors
+            print("DRAW")
+elif ready == 'NO':
+    print("GAME OVER")
