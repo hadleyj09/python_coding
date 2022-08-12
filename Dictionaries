@@ -1,0 +1,44 @@
+programming_dictionary = {"Bug": "An error in a program that prevents the program from running as expected.", 
+"Function": "A piece of code that you can easily call over and over again.",
+"Lion": "A very strong animal.",
+}
+
+programming_dictionary["Loop"] = "The action of doing something over and over again."
+
+
+
+empty_dictionary = {}
+programming_dictionary["Bug"] = "A 6 legged insect."
+
+for key in programming_dictionary:
+  print(key)
+  print(programming_dictionary[key])
+  
+_________________________________________
+
+student_scores = {
+  "Harry": 81,
+  "Ron": 78,
+  "Hermione": 99, 
+  "Draco": 74,
+  "Neville": 62,
+}
+
+
+student_grades = {}
+
+
+for student in student_scores:
+  score = student_scores[student]
+  if score >= 90:
+     student_grades[student] = "A - Outstanding!"
+  elif score >= 80:
+    student_grades[student] ="B - Good!"
+  elif score >= 70:
+    student_grades[student] ="C - Ok"
+  elif score >= 60:
+    student_grades[student] ="D - Study More"
+  else:
+    student_grades[student] ="FAIL"
+    
+print(student_grades)
