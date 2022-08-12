@@ -24,5 +24,39 @@ def add_new_country(country_visited, num_of_visits, cities_visited):
 add_new_country("Russia", 2, ["Moscow", "Saint Petersburg"])
 print(travel_log)
 
+____________________________________________________________________
+
+work_meal_prep = [
+  {
+    "day":"Monday", 
+    "food":["beans", "salad", "soup"],
+    "drink":"water"
+  },
+  {
+    "day":"Tuesday", 
+    "food":["lentils", "steak", "sushi"],
+    "drink":"orange juice"
+  },
+  {
+    "day":"Wednesday", 
+    "food":["pizza", "soup", "salad"],
+    "drink":"water"
+  },
+  {
+    "day":"Thursday", 
+    "food":["cereal", "toast", "honeybun"],
+    "drink":"water"
+  }
+]
+def add_work_meals(day, food, drink):
+  work_meals = {}
+  work_meals["day"] = day
+  work_meals["food"] = food
+  work_meals["drink"] = drink
+  work_meal_prep.append(work_meals)
+
+add_work_meals("Friday", ["tuna", "curry", "samosa"], "coffee")
+print(work_meal_prep)
+  
 
 
