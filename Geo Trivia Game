@@ -1,0 +1,40 @@
+ready = input("Welcome to Geo Trivia! Try to get the 3 answers correct! Are you ready to play? ").lower()
+
+if ready == "yes":
+  print("Alright! Here is your first question.")
+else:
+  print("GAME OVER")
+  quit()
+
+score = 0
+
+question1 = input("What is the capital of India? ").lower()
+if question1 == "new delhi":
+  print("Correct! Next question!")
+  score += 1
+else:
+   print("Incorrect. Maybe you'll get the next one!")
+
+question2 = input("What is the name of Japan's most well known volcano? ").lower()
+if question2 == "mt. fuji" or question2 == "mt fuji":
+  print("Correct! Next question!")
+  score += 1
+else:
+   print("Incorrect. Maybe you'll get the next one!")
+
+question3 = input("Kuala Lumpur is the capital city of which country? ").lower()
+if question3 == "malaysia":
+  print("Correct! Next question!")
+  score += 1
+else:
+   print("Incorrect. Maybe you'll get the next one!")
+
+print(f"You got {score} questions correct.")
+print(f"That is {(score/3) * 100}%.")
+
+if score == 3:
+  print("You got a PERFECT SCORE!! CONGRATS!!!")
+elif score == 2:
+  print("2 out of 3. Not too bad.")
+else:
+  print("Better luck next time.")
