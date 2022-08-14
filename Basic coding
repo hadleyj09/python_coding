@@ -1,0 +1,72 @@
+count = [1,2,3,4,5,6,7,8,9,10]
+
+for number in count:
+  if number % 2 == 0:
+    print(number)
+  else:
+    print(f"{number} is an odd number")
+________________________________________
+
+sum = 0
+
+for number in count:
+  sum += number
+print(sum)
+
+
+__________________________________
+
+from random import randint
+
+CPU = randint(0,100)
+guess = int(input("Enter a number between 0 and 100: "))
+if guess == CPU:
+  print(f"You guessed {guess}")
+  print(f"The CPU guessed {CPU}")
+  print("Wow! Lucky duck!")
+else: 
+  print(f"You guessed {guess}")
+  print(f"The CPU guessed {CPU}")
+  print("Too bad! Better luck next time!")
+  
+  
+  _________________________________________
+
+
+answer = input("You have just entered a game that might send chills down you spine. Are you sure you want to play? Enter Yes or No ").lower()
+
+if answer != 'yes':
+  print("Wise choice.")
+  quit()
+else:
+  print("Very well. Let's hope you don't die.")
+
+Round1 = input("You're walking down a hall, and come to a dead end. Do you turn left, or right? Enter (left / right): ")
+
+if Round1 == 'left':
+  choice = input("You continue walking, and you see somthing tall, skinny and disfigured has just ran across the other end of the hall. You keep walking and you hear a howling noise rushing towards you! What do you do? Enter (wait) to fight off whatever is coming, or Enter (run) and get away from the area: ").lower()
+  if choice == 'wait':
+    choice2 = ("A large monster has seen you is rushing even faster! You have one last chance to run! Enter (run / fight): ")
+    if choice2 == 'fight':
+      print("That was stupid. The monster rips you apart! YOU DIE!")
+      print("GAME OVER")
+    else:
+      print("You were too late! A second monster rips you apart! YOU DIE!")
+      print("GAME OVER")
+  else:
+    next = input("You run to a dead end, but there's a window. You can either Enter (break) the glass, or Enter (run): ").lower()
+    if next == "run":
+      print("You run into the monster and DIE!")
+      print("GAME OVER")
+    else:
+      print("You break the glass and slide down the slide that's there. Lucky for you, the monsters in the building are scared of the outside world.")
+      print("YOU WIN!")
+else:
+  right_path = input("You continue to walk, and you hear something rushing your way! You feel the vibrations of a huge creature under your feet! Suddenly, a door on the floor opens. You can either Enter (jump) to try and escape the area, or Enter (wait) and see what happens: ").lower()
+  if right_path == 'wait':
+    print("You are ripped apart by the monster Lose your ego next time. YOU DIE!")
+    print("GAME OVER")
+  else:
+    print("You escape the monster and fall into ocean, where sharks eat you. YOU DIE! Next time, don't do walking around monster-filled buildings ya dum dum.")
+    print("GAME OVER")
+  
