@@ -1,0 +1,15 @@
+gamer_scores = [("John", 200), ("Sally", 600), ("Roger", 300), ("Tom", 800), ("Brook", 900), ("Ben", 1500), ("Aaron", 1350), ("Seth", 1600), ]
+
+def check_high_score(gamer_scores):
+  max_score = 0
+  best_player = " "
+  
+  for player,score in gamer_scores:
+    if score > max_score:
+      max_score = score
+      best_player = player
+    else:
+      pass
+  return (best_player,score)
+
+print(check_high_score(gamer_scores))
