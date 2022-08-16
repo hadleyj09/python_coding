@@ -1,0 +1,11 @@
+item_price = float(input("Enter the price of the item: "))
+
+discount = item_price * 0.2
+
+sale_price = (item_price - discount)
+
+print(sale_price)
+
+
+
+
