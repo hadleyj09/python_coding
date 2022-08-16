@@ -1,0 +1,9 @@
+user_future_value = float(input("Enter the amount you'd like to see in your account in 10 years: $"))
+
+interest_rate = float(input("Enter the annual interest rate: "))
+
+years = int(input("Enter the number of years your money will appreciate: "))
+
+present_value = user_future_value / (1.0 + interest_rate) ** years
+
+print(present_value)
