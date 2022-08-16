@@ -1,0 +1,10 @@
+#Get users email
+user = input("Please enter your email address: ")
+
+#Slice username
+username = user[:user.index("@")]
+
+#Slice domain name
+domain_name = user[user.index("@") + 1 :]
+
+print(f"Your username is {username}, and your domain name is {domain_name}.")
