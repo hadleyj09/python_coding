@@ -1,0 +1,28 @@
+#Create a Party Check In System
+PartyList = ["Andy", "Tony", "Mary", "Samantha", "Corey", "Dan", "Ai", "Brook", "Catherine", "Andrew", ]
+VIP_pass = ["Andrew", "Samantha", "Brook", "Corey"]
+
+print("Welcome to the SAMOSA ROSA!")
+name = input("Please enter your name (ex. John): ").strip()
+
+while True:
+  if name in PartyList:
+    choice = input(f"Thank you for joining us, {name}. Will you be attending the VIP section? Enter (Yes / No): ").lower()
+    print("Very good then. Please enter the left door and present your VIP Pass.")
+    if name in VIP_pass:
+      VIP_enter = input("Welcome to SAMOSA ROSA VIP Lounge. DO you have your VIP PASS? Enter (Yes / No): ").lower()
+      print(f"Thank you very much, {name}. Enjoy.")
+    elif name not in VIP_pass:
+      VIP_enter = input("Welcome to SAMOSA ROSA VIP Lounge. We do not recognize your name. Would you like to pay the $1500 fee to obtain a VIP PASS this evening? Enter (Yes / No): ").lower()
+      if VIP_enter == 'yes':
+        print(f"Thank you very much, {name}. Enjoy.")
+      else:
+        print(f"Please exit the VIP Lounge, {name}.")
+  else:
+    choice_fee = input(f"Welcome to SAMOSA ROSA, {name}. We do not recognize your name. Would you like to pay the $50 fee to enter this evening? Enter (Yes / No): ").lower()
+    if choice_fee == 'yes':
+      print(f"Thank you very much, {name}. Enjoy.")
+    else:
+      print(f"Please exit SAMOSA ROSA, {name}. Thank you.")
+
+
