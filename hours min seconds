@@ -1,0 +1,17 @@
+#Get the number of seconds from the user
+total_seconds = float(input("Enter the number of seconds to get the time in hours minutes and seconds: "))
+
+#Get the number of hours
+hours = total_seconds//3600
+
+#Get the number of remaining minutes
+minutes = (total_seconds // 60) % 60
+
+#Get the number of remaining seconds
+seconds = total_seconds % 60
+
+
+print(f"{total_seconds} seconds is \n "
+      f"{hours} hours, \n"
+      f"{minutes} minutes, \n"
+      f"and {seconds} seconds.")
