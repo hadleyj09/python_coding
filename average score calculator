@@ -1,0 +1,7 @@
+test1 = int(input("Enter your first test score: "))
+test2 = int(input("Enter your second test score: "))
+test3 = int(input("Enter your third test score: "))
+
+average_score = round((test1 + test2 + test3) / 3,2)
+
+print(f"Your average score is {average_score}.")
