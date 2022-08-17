@@ -1,0 +1,36 @@
+#Get sentence from user
+sentence = input("Please enter your sentence here: ").strip().lower()
+
+#split sent into words
+words = sentence.split()
+
+
+#loop through words and covert to pig latin
+new_words = []
+
+#If it starts with a vowel, add 'yay'
+#Otherwise move first consonant cluster to end and add 'ay'
+for word in words:
+  if word[0] in 'aeiou':
+    new_word = word + 'yay'
+    new_words.append(new_word)
+  else:
+    vowel_position = 0
+    for letter in word:
+      if letter not in 'aeiou':
+        vowel_position += 1
+      else:
+        break
+    consonant = word[:vowel_position]
+    the_rest = word[vowel_position:] 
+    new_word = the_rest + consonant + "ay"
+    new_words.append(new_word)
+
+
+
+#put words back together
+output = " ".join(new_words)
+
+
+#print final strings
+print(output)
