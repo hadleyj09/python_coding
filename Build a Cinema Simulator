@@ -1,0 +1,26 @@
+
+films= {
+  "Iron Man":[13,4],
+  "Kung Fu Panda":[4,10],
+  "Spider-Man":[10,0],
+  "Avatar":[13,2]
+}
+
+while True:
+
+  choice = input("Please Enter the film you'd like to see: ").strip().title()
+
+  if choice in films:
+    age = int(input("How old are you? ").strip())
+    if age >= films[choice][0]:
+      seats = films[choice][1]
+      if seats > 0:
+        seats -= 1
+        print(f"There are {seats} seats left. Enjoy the film!")
+      else:
+        print(f"This, {choice}, has been sold out. Please choose another film.")
+    else:
+      print(f"You must be {films[choice][0]} years old to see {choice}.")
+  else:
+    print("That film is not available")
+    
