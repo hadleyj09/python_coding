@@ -1,0 +1,28 @@
+movies_available = {
+  "Copper Man 4":[13,4],
+  "Kicking Bear":[8,7],
+  "Sonic Movie 3":[10,13],
+  "General America":[13,6],
+  "Web Guy":[12,5],
+  "The Cub Prince":[4,0]
+}
+
+
+
+while True:
+  choice = input("Welcome to the Bootleg Classics Theatre. Please enter the film you'd like to see: ").strip().title()
+  if choice in movies_available:
+    age = int(input("Please enter your age: "))
+    if age >= movies_available[choice][0]:
+      seats_available = movies_available[choice][1]
+      seats_available -= 1
+      if seats_available > 0:
+        print(f"There are {seats_available} seats available for the film, {choice}. Get your tickets soon and enjoy the film!")
+      else:
+        print(f"All seats for the film, {choice}, have been sold out.")
+    else:
+       print(f"You are too young to see the film {choice}.")
+  else:
+    print(f"The film, {choice}, is not available here. Please select another film.")
+
+
