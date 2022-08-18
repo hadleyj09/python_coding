@@ -1,0 +1,49 @@
+while True:
+  import random
+  player_name = input("Enter your name: ").strip()
+  ready = input(f"Welcome to the SAMOSA Adventure Challenge, {player_name}. In this game, you need to get to the golden SAMOSA! But throughout this journey, you might die...fall off a cliff, or just fade away into nothingness. Are you ready? Enter( Yes / No: ").strip().lower()
+  if ready != 'yes':
+    print("Such a shame. No samosa for you.")
+    continue
+  elif ready == 'yes':
+    age = int(input("Good. How old are you? Enter your age: ").strip())
+    if age >= 18:
+      challenge1 = input(f"{player_name}, you are old enough to play. Now for your first challenge. You are walking and see 2 doors. One is red and one is blue. Choose a door. Enter (red / blue): ").strip().lower()
+    else:
+      print("You are not old enough")
+      quit()
+      
+    if challenge1 == "red":
+        print("So sorry. You fell and sank into the spicy curry. YOU DIE. No samosa for you.")
+    elif challenge1 == "blue":
+        challenge2 = input("Very very good! Now, you enter a glamorous hall of food. There is curry, naan, parata, and you see 2 samosa stands. One is fried, the other is baked. Which do you eat? Enter (fried / baked): ").strip().lower()
+        if challenge2 == 'fried':
+          challenge3 = input("If you pass this, then the golden samosa is your. After destroying the restroom, you come to 2 balloons. The golden samosa is in one of them. You have to decide which balloon to pop. Do you pop the one on your left, or the one on your right? Enter (left / right): ").strip().lower()
+          if challenge3 == 'left':
+            print("The balloon explodes, and shoots daal curry in your face! Then a trap door from under feet open and you fall into the sea. YOU DIE.")
+            
+          elif challenge3 == 'right':
+            bonus_choice = input("You got the GOLDEN SAMOSA! But before you can east it, there's one more challenge. It's a 50/50 Win/fail type thing. You have to guess a number. If it's in the same range of numbers as the CPUs guess, then the GOLDEN SAMOSA is yours! Are you ready? Enter (yes / no: ").strip().lower()
+            if bonus_choice == 'yes':
+              CPU_guess = random.choice(range(0,101))
+              player_guess = int(input("Enter a number between 1 and 100: "))
+              if CPU_guess >= 1 and CPU_guess <= 49 and player_guess >= 1 and \
+              player_guess <= 49 or CPU_guess >= 50 and CPU_guess <= 100 and \
+              player_guess >= 50 and player_guess <= 100:
+                print(f"The CPU guessed {CPU_guess} and you guessed {player_guess}.")
+                print("You win!! You are the SAMOSA ROSA!")
+              else:
+                print("GAME OVER")
+            else:
+              print("GAME OVER")
+          else: 
+            print("You donkey tooth! That's not a choice. Try again!")
+        elif challenge2 == 'baked':
+          print("I know you were trying to be healthy, but everyone knows that fried samosa is the best! And the baked ones are poisoned. YOU DIE.")
+          continue
+        else: 
+          print("You dingleboob. That's not a choice. Try again!")
+    else:
+        ("Try again you flovorless boo-baa-doo!")
+  else:
+    print("That's not an answer ya dum dum. You bring shame upon all Indian cusine! Try again!")
