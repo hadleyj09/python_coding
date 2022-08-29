@@ -1,0 +1,8 @@
+name = input("Enter your name: ")
+sales = float(input("Enter your total amount of sales: $"))
+#Commission is 13% of total sales
+commission = round(sales * 13 / 100, 2)
+
+print(f"Hello, {name}. You sold a total amount of ${sales} worth of product. You are entitled\n"
+      f"to 13% of your total sales as commission.\n"
+      f"Based on your sales, your commission amount is ${commission}.")
