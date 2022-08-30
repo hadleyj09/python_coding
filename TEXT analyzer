@@ -1,0 +1,53 @@
+
+
+text = input("Please enter a sentence of your choice: ")
+letters = []
+
+text = text.lower()
+letters.append(input("Enter your first letter: ").lower())
+letters.append(input("Enter your second letter: ").lower())
+letters.append(input("Enter your third letter: ").lower())
+
+print("\n")
+print("LETTER REPITITION")
+
+letter_repitition1 = text.count(letters[0])
+letter_repitition2 = text.count(letters[1])
+letter_repitition3 = text.count(letters[2])
+
+print(f"We have found the letter '{letters[0]}' repeated '{letter_repitition1}'")
+print(f"We have found the letter '{letters[1]}' repeated '{letter_repitition2}'")
+print(f"We have found the letter '{letters[2]}' repeated '{letter_repitition3}'")
+
+print("\n")
+print("NUMBER OF WORDS")
+
+words = text.split()
+print(f"We have found {len(words)} in your sentence")
+
+print("\n")
+print("FIRST AND LAST LETTERS")
+
+first_letter = text[0]
+last_letter = text[-1]
+print(f"The first letter of your sentence is ''{first_letter}', \n"
+      f"and the last letter is '{last_letter}'")
+
+print("\n")
+print("INVERTED TEXT")
+
+words.reverse()
+inverted_text  = " ".join(words)
+print(f"If your sentence was in reverse, it would look like this: \n"
+      f"'{inverted_text}'")
+
+print("\n")
+print("LOOKING FOR THE WORD PYTHON")
+
+if 'python' in text:
+    print("The word 'python' was found in your sentence.")
+else:
+    print("The word 'python' was not found in your sentence.")
+
+
+
