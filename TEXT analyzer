@@ -1,53 +1,41 @@
 
 
-text = input("Please enter a sentence of your choice: ")
+sentence = input("Please Enter your text here: ").lower()
 letters = []
 
-text = text.lower()
-letters.append(input("Enter your first letter: ").lower())
-letters.append(input("Enter your second letter: ").lower())
-letters.append(input("Enter your third letter: ").lower())
+letters.append(input("Enter a letter. We will count how many times it appears in your sentence: ").lower())
+letters.append(input("Enter another letter. We will count how many times it appears in your sentence: ").lower())
+letters.append(input("Enter a third letter. We will count how many times it appears in your sentence: ").lower())
 
 print("\n")
-print("LETTER REPITITION")
-
-letter_repitition1 = text.count(letters[0])
-letter_repitition2 = text.count(letters[1])
-letter_repitition3 = text.count(letters[2])
-
-print(f"We have found the letter '{letters[0]}' repeated '{letter_repitition1}'")
-print(f"We have found the letter '{letters[1]}' repeated '{letter_repitition2}'")
-print(f"We have found the letter '{letters[2]}' repeated '{letter_repitition3}'")
+print("LETTR COUNT")
+letter_count1 = sentence.count(letters[0])
+letter_count2 = sentence.count(letters[1])
+letter_count3 = sentence.count(letters[2])
+print(f"We found that the letter '{letters[0]}' appears {letter_count1} times")
+print(f"We found that the letter '{letters[1]}' appears {letter_count2} times")
+print(f"We found that the letter '{letters[2]}' appears {letter_count3} times")
 
 print("\n")
-print("NUMBER OF WORDS")
+print("FIRST AND LAST LETTER")
+words = sentence.split()
+first_letter = sentence[0]
+last_letter = sentence[-1]
 
-words = text.split()
-print(f"We have found {len(words)} in your sentence")
-
-print("\n")
-print("FIRST AND LAST LETTERS")
-
-first_letter = text[0]
-last_letter = text[-1]
-print(f"The first letter of your sentence is ''{first_letter}', \n"
-      f"and the last letter is '{last_letter}'")
+print(f"The first letter of your sentence is '{first_letter}'. \n"
+      f"The last letter of your sentence is '{last_letter}'")
 
 print("\n")
-print("INVERTED TEXT")
-
+print("REVRSE SENTENCE")
 words.reverse()
-inverted_text  = " ".join(words)
-print(f"If your sentence was in reverse, it would look like this: \n"
-      f"'{inverted_text}'")
+sentence_in_reverse = " ".join(words)
+print(f"If we wrote your sentence in reverse, it would look like this: \n"
+      f"'{sentence_in_reverse}'")
 
 print("\n")
-print("LOOKING FOR THE WORD PYTHON")
-
-if 'python' in text:
-    print("The word 'python' was found in your sentence.")
+print("FIND THE WORD SAMOSA")
+if 'samosa' in sentence:
+    print("The word 'samosa' appears in your sentence.")
 else:
-    print("The word 'python' was not found in your sentence.")
-
-
+    print("There is no mention of the word 'samosa' in your sentence")
 
