@@ -1,0 +1,10 @@
+names = ['Hannah', 'Bruce', 'Tony', 'Minato', 'Rajesh']
+ages = [65, 29, 42, 34, 32]
+cities = ['New York', 'Chicago', 'Dallas', 'Osaka', 'Mumbai']
+food = ['Vegetarian food', 'Chicago Deep Dish Pizza', 'Steak', 'Okonomiyaki', 'Samosa']
+
+
+combination = list(zip(names, ages, cities, food))
+
+for name, age, city, food in combination:
+    print(f"{name} is {age} years old, likes {food}, and lives in {city}. ")
