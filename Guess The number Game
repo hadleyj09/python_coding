@@ -1,0 +1,25 @@
+
+
+from random import randint
+
+guess = 0
+secret_number = randint(1, 100)
+estimation = 0
+name = input("Please type your name: ")
+
+print(f"Okay {name}, I have thought of a number between 0 and 100. You have 8 guesses.")
+
+while guess < 8:
+    estimation = int(input("What is the number you have guessed? "))
+    guess += 1
+
+    if estimation < secret_number:
+        print("My number is higher.")
+    elif estimation > secret_number:
+        print("My number is lower.")
+    else:
+        print(f"Congrats! You got it! It took you {guess} guesses.")
+        break
+
+if estimation != secret_number:
+    print(f"Sorry. You have run out of attemps. My number was {secret_number}.")
