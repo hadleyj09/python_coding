@@ -1,0 +1,34 @@
+food_items = [('Mexican veggie \n burger', 700),
+             ('pineapple burger', 750),
+             ('samosa', 200),
+             ('fries', 150),
+             ('Blue cheese veggie burger', 750),
+             ('jalapeno veggie burger', 800)]
+
+#Print out food items only
+for food, price in food_items:
+  print(food)
+#Print out prices items only
+for food, price in food_items:
+  print(price)
+#Print out full menu
+for item in food_items:
+  print(item)
+
+def most_expensive_item(food_items):
+  highest_price = 0
+  food = ''
+
+  for food, price in food_items:
+    if price > highest_price:
+      highest_price = price
+      highest_food = food
+    else:
+      pass
+
+  return highest_food, highest_price
+
+food, price = most_expensive_item(food_items)
+
+print(f"The most expensive food item on our menu is the '{food}', whose price is ¥{price}.")
+  
