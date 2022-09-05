@@ -1,0 +1,29 @@
+#calculate average grade
+
+marks = [33, 66, 87, 90, 44, 74, 93]
+
+def average_grade(marks):
+    sum_marks = sum(marks)
+    total_scores = len(marks)
+    average_score = sum_marks / total_scores
+    return average_score
+
+score = average_grade(marks)
+print(round(score))
+
+def grade(score):
+    if score <= 100 and score >=90:
+        grade = 'A'
+    elif score <= 89 and score >= 80:
+        grade = 'B'
+    elif score <= 79 and score >= 70:
+        grade = 'C'
+    else:
+        grade = 'F'
+    return grade
+
+grade = grade(score)
+print(grade)
+
+overall_grade = (f'Your score was {score}, and your grade is {grade}')
+print(overall_grade)
